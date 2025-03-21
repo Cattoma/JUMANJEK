@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUMANJEK</title>
+    <title>JUMANJET</title>
+    <link rel="icon" type="image/png" href="picture/icon game.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -11,7 +12,8 @@
 <body>
     <nav class="navbar">
         <div class="nav-logo">
-            <h1>JUMANJEK</h1>
+            <img src="picture/icon game.png" alt="JUMANJET Icon" class="nav-icon">
+            <h1>JUMANJET</h1>
         </div>
         <div class="nav-links">
             <a href="#home">หน้าแรก</a>
@@ -30,8 +32,8 @@
     <main>
         <section id="hero" class="hero-section">
             <div class="hero-content">
-                <h1>JUMANJEK</h1>
-                <p>ผจญภัยในโลกแห่งเวทมนตร์</p>
+                <h1>JUMANJET</h1>
+                <p>ผจญภัยในโลกของเกม</p>
                 <div class="hero-buttons">
                     <button class="btn-primary">เริ่มการผจญภัย</button>
                     <button class="btn-secondary">ดูตัวอย่างเกม</button>
@@ -53,16 +55,67 @@
             <h2>เกี่ยวกับเกม</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>JUMANJEK เป็นเกมผจญภัยแนวใหม่ที่ผสมผสานระหว่างโลกแห่งความเป็นจริงและจินตนาการ ผู้เล่นจะได้สวมบทบาทเป็นนักผจญภัยที่ต้องฝ่าฟันอุปสรรคต่างๆ ในโลกที่เต็มไปด้วยความท้าทาย</p>
+                    <p>JUMANJET คือชื่อของเกมที่พวกเรากำลังเล่น แต่ระหว่างที่เล่นอยู่ ทุกอย่างกลับผิดปกติ มันดูดพวกเราสู่โลกของเกมจริง ๆ
+                         จุดคุณจะได้รับบทเป็นตัวเอกของเรื่อง และต้องดำเนินเนื้อหาไปเรื่อย ๆ เพื่อหาทางออกจากเกมนี้ แต่ไม่มีใครรู้เลยว่านี่...ไม่ใช่แค่เกมธรรมดา!</p>
                     <ul class="game-features">
                         <li><i class="fas fa-check"></i> กราฟิกระดับ AAA</li>
                         <li><i class="fas fa-check"></i> ระบบต่อสู้แบบเรียลไทม์</li>
-                        <li><i class="fas fa-check"></i> การผจญภัยแบบ Open World</li>
-                        <li><i class="fas fa-check"></i> ระบบ Multiplayer แบบไร้ขีดจำกัด</li>
+                        <li><i class="fas fa-check"></i> การผสมธาตุใช้สกิลไร้ขีดจำกัด</li>
+                        <li><i class="fas fa-check"></i> การต่อสู้ที่ดุเดือดในแต่ละด่าน</li>
                     </ul>
                 </div>
                 <div class="about-image">
-                    <img src="assets/game-preview.jpg" alt="JUMANJEK Gameplay">
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="slide">
+                                <img src="picture/f1.png" alt="JUMANJET Gameplay - Destroy All Generator">
+                            </div>
+                            <div class="slide">
+                                <img src="picture/f2.png" alt="JUMANJET Gameplay - Destroy All Generator 2">
+                            </div>
+                            <div class="slide">
+                                <img src="picture/f3.png" alt="JUMANJET Gameplay - Go Forward">
+                            </div>
+                            <div class="slide">
+                                <img src="picture/f4.png" alt="JUMANJET Gameplay - Checkpoint Reached">
+                            </div>
+                            <div class="slide">
+                                <img src="picture/f5.png" alt="JUMANJET Gameplay - Steal Secret Information">
+                            </div>
+                            <div class="slide">
+                                <img src="picture/f6.png" alt="JUMANJET Gameplay - Character Portrait">
+                            </div>
+                        </div>
+                        <div class="slider-nav">
+                            <button class="prev-btn">&lt;</button>
+                            <button class="next-btn">&gt;</button>
+                        </div>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trailer" class="trailer-section">
+            <h2>ตัวอย่างเกม</h2>
+            <div class="trailer-container">
+                <div class="video-wrapper">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="Video/T9.mp4" 
+                        title="JUMANJET Trailer" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -92,19 +145,19 @@
             <h2>ตัวละคร</h2>
             <div class="character-cards">
                 <div class="character-card">
-                    <img src="assets/character-1.jpg" alt="Character 1">
-                    <h3>นักรบผู้กล้า</h3>
-                    <p>ผู้พิทักษ์แห่งอาณาจักร มีความสามารถในการต่อสู้ระยะประชิด</p>
+                    <img src="picture/player.png" alt="Character 1">
+                    <h3>ผู้เล่น</h3>
+                    <p>ชายหมุ่มที่ถูกดึงเข้ามาในเกมและพยายามต่อสู้เพื่อที่จะออกไปจากโลกอันแสนโหดรา้ยนี้ให้ได้</p>
                 </div>
                 <div class="character-card">
-                    <img src="assets/character-2.jpg" alt="Character 2">
-                    <h3>นักเวทย์มนตรา</h3>
-                    <p>ผู้ควบคุมธาตุทั้ง 4 มีพลังเวทมนตร์ที่ทรงพลัง</p>
+                    <img src="picture/Enemy_2-1.png" alt="Character 2">
+                    <h3>ศัตรูระยะใกล้</h3>
+                    <p>ตัวร้ายที่มีพลังอันร้ายกาจ เขาใช้ไม้เบสบอลโจมตีด้วยดาเมจที่รุนแรง</p>
                 </div>
-                <div class="character-card">
-                    <img src="assets/character-3.jpg" alt="Character 3">
-                    <h3>นักล่าสมบัติ</h3>
-                    <p>ผู้เชี่ยวชาญการค้นหาสมบัติและไขปริศนา</p>
+                <div class="character-card"> 
+                    <img src="picture/Enemy.png" alt="Character 3">
+                    <h3>ศัตรูระยะไกล</h3>
+                    <p>ผู้ที่โจมตีระยะไกลด้วยปืน โดยที่เราไม่ได้ทันระวังตัว</p>
                 </div>
             </div>
         </section>
@@ -113,19 +166,19 @@
             <h2>ข่าวสารล่าสุด</h2>
             <div class="news-grid">
                 <article class="news-card">
-                    <img src="assets/news-1.jpg" alt="News 1">
+                    <img src="picture/Poster-Jumanjet.png" alt="News 1">
                     <div class="news-content">
-                        <span class="news-date">15 มีนาคม 2567</span>
-                        <h3>อัพเดทใหม่: แผนที่ใหม่และตัวละครพิเศษ</h3>
-                        <p>พบกับแผนที่ใหม่และตัวละครสุดพิเศษที่จะเพิ่มความสนุกให้กับการผจญภัย</p>
+                        <span class="news-date">25 กุมภาพันธ์ 2567</span>
+                        <h3>PlayTesting ได้แล้วที่ FoodCenter CMU</h3>
+                        <p>เปิดให้ทดลองเล่นแล้ว มาสนุกกับเกม ผจญภัยในโลกของเกม ด้วยธาตุกับเถอะ</p>
                     </div>
                 </article>
                 <article class="news-card">
-                    <img src="assets/news-2.jpg" alt="News 2">
+                    <img src="picture/fire-element.png" alt="News 2">
                     <div class="news-content">
                         <span class="news-date">10 มีนาคม 2567</span>
-                        <h3>การแข่งขัน JUMANJEK Tournament</h3>
-                        <p>ร่วมการแข่งขันชิงเงินรางวัลรวมกว่า 1,000,000 บาท</p>
+                        <h3>พลังธาตุใหม่</h3>
+                        <p>ปลดล็อคพลังธาตุใหม่ เข้ามาเล่นกันได้เลย</p>
                     </div>
                 </article>
             </div>
@@ -135,7 +188,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-info">
-                <div class="footer-logo">JUMANJEK</div>
+                <div class="footer-logo">JUMANJET</div>
                 <p>เกมผจญภัยที่จะพาคุณไปสู่โลกแห่งจินตนาการ</p>
             </div>
             <div class="footer-links">
@@ -148,7 +201,7 @@
             <div class="social-links">
                 <h4>ติดตามเรา</h4>
                 <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://web.facebook.com/profile.php?id=61574436503242" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
@@ -156,7 +209,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 JUMANJEK. สงวนลิขสิทธิ์</p>
+            <p>&copy; 2024 JUMANJET. สงวนลิขสิทธิ์</p>
         </div>
     </footer>
 

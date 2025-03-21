@@ -59,3 +59,52 @@ document.querySelectorAll('.btn-primary, .btn-play').forEach(button => {
         this.style.setProperty('--y', `${y}px`);
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelector('.slides');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const dots = document.querySelectorAll('.dot');
+    
+    let currentSlide = 0;
+    const totalSlides = dots.length;
+
+    // ฟังก์ชันสำหรับเลื่อนไปยังสไลด์ที่ต้องการ
+    function goToSlide(slideIndex) {
+        currentSlide = slideIndex;
+        const offset = -currentSlide * (100 / totalSlides);
+        slides.style.transform = `translateX(${offset}%)`;
+        
+        // อัพเดทสถานะของ dots
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+    }
+
+    // ปุ่มเลื่อนไปสไลด์ถัดไป
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        goToSlide(currentSlide);
+    }
+
+    // ปุ่มเลื่อนไปสไลด์ก่อนหน้า
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        goToSlide(currentSlide);
+    }
+
+    // เพิ่ม Event Listeners
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+    
+    // เพิ่ม Event Listeners สำหรับ dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+        });
+    });
+
+    // เลื่อนสไลด์อัตโนมัติทุก 5 วินาที
+    setInterval(nextSlide, 5000);
+});
